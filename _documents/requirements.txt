@@ -1,0 +1,35 @@
+* Hacer contact.jpg usando React.js
+*Usar fuentes de assets/fonts
+*Funcionar de
+   manera modular
+*Validación de campos
+* service:
+	objeto tipo FormData
+	url: http://ingenia.com/snippets/test/contact.php
+   
+	method: POST
+   mimeType: multipart/form-data
+	data keys: fullname
+   email
+   phone
+   comment
+
+	mostrar mensaje en pantalla al usuario (No usar alert)
+*Next.js
+*CAPTCHA al formulario
+La prueba deberá contemplar la siguiente estructura:
+
+	/_
+     |_/css: (Capeta que contiene definiciones de estilos y elementos gráficos de presentación)
+	|    |_/fonts: (Carpeta que contiene las Web Fonts utilizadas en el proyecto)
+     |    |_/img (Carpeta que contiene las imágenes utilizadas para la presentación)
+	|
+     |_/js: (Carpeta que contiene archivos con funcionalidad JavaScript)
+	|
+     |_index.html: (Punto de acceso a la página-sistema)
+
+Enviar zip con el contenido, llamandolo: Ingenia_Front_React_Test;
+	a los correos: erika.contreras@ingenia.com
+   fernanda.rodriguez@ingenia.com
+
+	subject: [Prueba Remota Front-End] Eric Torres

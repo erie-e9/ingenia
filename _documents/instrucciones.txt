@@ -1,0 +1,69 @@
+/*--------------------------------------------------
+    INGENIA AGENCY
+    Prueba Práctica Front-End con ReactJS
+    Tiempo Estimado: 8 - 10 horas.
+ ----------------------------------------------------*/
+ 
+############################################################ 
+ FRONT-END
+############################################################ 
+ 
+ * Se deberá realizar la maqueta de la pantalla definida en el archivo
+   contact.jpg contenido dentro de la carpeta Wireframe.
+ * Las fuentes que se especifican en el Wireframe se encuentran localizadas
+   en la carpeta assets/fonts.
+ * Los recursos gŕaficos a utilizar se encuentran dentro de la carpeta assets.
+ * Se deberá realizar la maqueta con la librería ReactJS, por lo que deberá funcionar de
+   manera modular.
+ * Se deberá realizar la validación de los campos obligatorios del formulario
+   vía JavaScript.
+ * El formulario de contacto se deberá conectar al siguiente servicio:
+ 
+   url: http://ingenia.com/snippets/test/contact.php
+   method: POST
+   mimeType: multipart/form-data
+   
+   los datos deben enviarse en un objeto tipo FormData con estos nombres:
+   fullname
+   email
+   phone
+   comment
+ * Procesar la información que regresa el servicio y mostrar mensaje en pantalla al usuario (No usar alert)
+   
+############################################################
+ CONSIDERACIONES TÉCNICAS Y DE DISEÑO
+############################################################
+
+ * Es de la elección del aspirante el definir la librería o método que utilizará para conectar con
+   el servicio de back (Redux.js, Next.js, etc) para mostrar la respuesta en pantalla y se considerará 
+   como un puntaje extra sobre el valor total de la evaluación.
+ * Queda a elección del aspirante el definir cómo mostrar los mensajes de 
+   error de validaciones correspondientes.
+ * Queda a consideración del aspirante el agregar CAPTCHA al formulario y se considerará 
+   como un puntaje extra sobre el valor total de la evaluación.
+ * El tiempo estimado para realizar la prueba en su totalidad está planeado
+   entre 8 a 10 horas.
+   
+############################################################
+ ENTREGABLES
+############################################################
+
+ * La prueba deberá contemplar la siguiente estructura:
+ 
+   /_
+     |_/css (Capeta que contiene definiciones de estilos y elementos gráficos de presentación)
+     |    |_/fonts (Carpeta que contiene las Web Fonts utilizadas en el proyecto)
+     |    |_/img (Carpeta que contiene las imágenes utilizadas para la presentación)
+     |
+     |_/js (Carpeta que contiene archivos con funcionalidad JavaScript)
+     |
+     |_index.html (Punto de acceso a la página-sistema)
+ 
+ * Una vez terminada la prueba se deberá enviar todo el proyecto contenido en un archivo zip 
+   con el nombre: Ingenia_Front_React_Test, a las siguientes direcciones de correo electrónico:
+   erika.contreras@ingenia.com
+   fernanda.rodriguez@ingenia.com
+    
+
+ * El subject del correo deberá ser: [Prueba Remota Front-End] Nombre_Aspirante; 
+   donde Nombre_Aspirante deberá sustituirse por el nombre completo del aspirante.
