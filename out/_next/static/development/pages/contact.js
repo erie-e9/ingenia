@@ -51,24 +51,50 @@ var Layout = function Layout(_ref) {
       lineNumber: 17
     },
     __self: this
-  }), __jsx("meta", {
-    name: "viewport",
-    content: "initial-scale=1.0, width=device-width",
+  }), __jsx("link", {
+    rel: "icon",
+    type: "image/x-icon",
+    href: "/static/images/icons/favicon.png",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
-  })), __jsx(_commons_navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), __jsx("link", {
+    rel: "shortcut icon",
+    href: "/static/images/icons/favicon.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), __jsx("meta", {
+    name: "viewport",
+    content: "initial-scale=1.0, width=device-width",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }), children, __jsx(_commons_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), __jsx("script", {
+    src: "https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit",
+    async: true,
+    defer: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
+    },
+    __self: this
+  })), __jsx(_commons_navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }), children, __jsx(_commons_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
     },
     __self: this
   }));
@@ -99,7 +125,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var DynamicFooterComponent = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(function () {
-  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./footer-content */ "./components/commons/footer/footer-content.tsx"));
+  return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./footer-content */ "./components/commons/footer/footer-content.tsx"));
 }, {
   ssr: false //   loading: () => <ComponentLoader />
   ,
@@ -111,7 +137,7 @@ var DynamicFooterComponent = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()
   }
 });
 var DynamicFooterLinks = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(function () {
-  return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./footer-links */ "./components/commons/footer/footer-links.tsx"));
+  return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./footer-links */ "./components/commons/footer/footer-links.tsx"));
 }, {
   ssr: false //   loading: () => <ComponentLoader />
   ,
@@ -185,10 +211,12 @@ var _jsxFileName = "D:\\code\\exp\\ingenia\\components\\commons\\navbar\\index.t
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
- // import Ilinks from '../../../interfaces/Ilinks'
 
 
 
+/** * 
+ * Navbar is loaded by a external file (links.js) that contain all posible section to visit into web app, that made easier add or remove links in a dynamically way.
+* ** */
 
 var NavBar = function NavBar() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_utils_links__WEBPACK_IMPORTED_MODULE_2__["default"].navbarlinks),
@@ -198,21 +226,21 @@ var NavBar = function NavBar() {
     className: "ingenia-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 15
     },
     __self: this
   }, __jsx("nav", {
     className: "ingenia-navbar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 16
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 17
     },
     __self: this
   }, __jsx("img", {
@@ -221,14 +249,14 @@ var NavBar = function NavBar() {
     width: 100,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 18
     },
     __self: this
   })), ' ', __jsx("div", {
     className: "headerlinks-right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 20
     },
     __self: this
   }, navbarlinks.map(function (item, i) {
@@ -237,7 +265,7 @@ var NavBar = function NavBar() {
       data: item,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 22
       },
       __self: this
     });
@@ -312,7 +340,7 @@ var _jsxFileName = "D:\\code\\exp\\ingenia\\components\\pages\\contact\\index.ts
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var DynamicContactForm = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e("styles"), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! ./form */ "./components/pages/contact/form/index.tsx"));
+  return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./form */ "./components/pages/contact/form/index.tsx"));
 }, {
   ssr: false //   loading: () => <ComponentLoader />
   ,
@@ -324,7 +352,7 @@ var DynamicContactForm = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(fun
   }
 });
 var DynamicContactLocations = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(function () {
-  return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./locations */ "./components/pages/contact/locations/index.tsx"));
+  return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./locations */ "./components/pages/contact/locations/index.tsx"));
 }, {
   ssr: false //   loading: () => <ComponentLoader />
   ,
@@ -336,7 +364,7 @@ var DynamicContactLocations = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default(
   }
 });
 var ContactFavoritePlaces = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e("styles"), __webpack_require__.e(4)]).then(__webpack_require__.bind(null, /*! ./favoriteplaces */ "./components/pages/contact/favoriteplaces/index.tsx"));
+  return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./favoriteplaces */ "./components/pages/contact/favoriteplaces/index.tsx"));
 }, {
   ssr: false //   loading: () => <ComponentLoader />
   ,
@@ -5552,7 +5580,11 @@ function (_react$Component) {
       // "<page>/index.html" directly.
 
 
-      if (false) {}
+      if (true) {
+        if (props.href && typeof __NEXT_DATA__ !== 'undefined' && __NEXT_DATA__.nextExport) {
+          props.href = (0, _rewriteUrlForExport.rewriteUrlForNextExport)(props.href);
+        }
+      }
 
       return _react["default"].cloneElement(child, props);
     }
@@ -7105,7 +7137,12 @@ function () {
         var as = typeof _as === 'object' ? utils_1.formatWithValidation(_as) : _as; // Add the ending slash to the paths. So, we can serve the
         // "<page>/index.html" directly for the SSR page.
 
-        if (false) {}
+        if (true) {
+          // @ts-ignore this is temporarily global (attached to window)
+          if (__NEXT_DATA__.nextExport) {
+            as = rewrite_url_for_export_1.rewriteUrlForNextExport(as);
+          }
+        }
 
         _this2.abortComponentLoad(as); // If the url change is only related to a hash change
         // We should not proceed. We should only change the state.
@@ -10640,5 +10677,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js",0]]]);
 //# sourceMappingURL=contact.js.map

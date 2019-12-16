@@ -54,7 +54,7 @@
         flex-direction: column;
         display: flex;
         margin: 20px 5px;
-        padding: 0 15px 0 0;
+        // padding: 0 15px 0 0;
         width: 175px;
 
         p {
@@ -194,4 +194,18 @@ span.footerlink {
         background: url('/static/images/btns/btns.png') 0 -33px;
     }
 
+}
+
+.test-three-shaking {
+    font-size: 10rem;
+    color: red;
+    font-weight: bold;
+}
+
+.footerDivider {
+    border-right: 0.3px solid rgb(170, 170, 170);
+    height: 125px;
+    margin: 20px 15px;
+    position: initial;
+    width: 1px;
 }

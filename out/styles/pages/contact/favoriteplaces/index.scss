@@ -9,13 +9,15 @@
     min-height: 200px;
     width: 100%;
     background-color: $SECOND;
+    padding: 20px 0;
+    margin: 20px 0;
 
     .favoriteplaces-cities {
-        margin: 20px 0;
+        margin: 5px 0;
         
         span {
-            font-size: 0.5rem;
-            font-weight: 200;
+            font-size: 0.85rem;
+            font-weight: 600;
             color: #777777;
             margin: 0 20px;
         }
@@ -49,14 +51,35 @@
 
 }
 
-.favoriteplace-item-wrapper-right {
+.countries {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.country {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.favoriteplace-item-wrapper{
     flex: 1;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     align-content: flex-end;
-    max-width: 140px;
+    width: 185px;
+    max-width: 185px;
+    margin: 5px 0;
+    padding: 5px 0;
 
     :nth-child(2) {
         color: #bebebe;
@@ -66,7 +89,7 @@
         font-size: 0.7rem;
         font-weight: 400;
         color: #777777;
-        text-align: end;
+        // text-align: end;
         line-height: 15px;
     }
 }
@@ -79,18 +102,62 @@
     align-items: center;
 
     p {
-        font-size: 0.75rem;
+        font-size: 0.95rem;
         font-weight: 600;
         color: #000;
         text-align: end;
         margin: 0;
         line-height: 20px;
+        z-index: 5;
     }
     
-    #favoriteplace-item-icon {
+    #favoriteplace-item-readbook {
         width: 33px;
         height: 33px;
         margin: 5px;
         background: url('/static/images/icons/icons.png') -99px 0;
     }
+
+    #favoriteplace-item-meetpeople {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/icons/icons.png') -33px 0;
+    }
+
+    #favoriteplace-item-entertain {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/icons/icons.png') -99px 0;
+    }
+
+    #favoriteplace-item-exercise {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/icons/icons.png') -132px 0;
+    }
+    
+    #favoriteplace-item-healthyfood {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/icons/icons.png') -99px 0;
+    }
+
+    #favoriteplace-item-shopping {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/icons/icons.png') -66px 0;
+    }
+}
+
+.favoriteplacesdivider {
+    border-right: 0.3px solid rgb(170, 170, 170);
+    height: 160px;
+    margin: 0 10px;
+    position: initial;
+    width: 1px;
 }

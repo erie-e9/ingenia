@@ -46,7 +46,6 @@
     flex-direction: column;
     display: flex;
     margin: 20px 5px;
-    padding: 0 15px 0 0;
     width: 175px; }
     .footer-ingenia-locations .footer-ingenia-location p {
       color: #777777;
@@ -151,9 +150,15 @@ span.footerlink {
     margin: 5px;
     background: url("/static/images/btns/btns.png") 0 -33px; }
 
-html,
-body,
-#__next {
+.footerDivider {
+  border-right: 0.3px solid #aaaaaa;
+  height: 125px;
+  margin: 20px 15px;
+  position: initial;
+  width: 1px; }
+
+
+body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -168,6 +173,13 @@ body {
   font-family: "Pangram", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+button:active {
+  outline: none;
+  border: none; }
+
+button:focus {
+  outline: 0; }
 
 .ingenia-header {
   width: 100%;
@@ -346,7 +358,7 @@ a:link {
 .form-button {
   background-color: #f47320;
   border: 0;
-  margin: 20px 0 0 0;
+  margin: 20px 5px 0 5px;
   padding: 5px 10px;
   border-radius: 1px;
   cursor: pointer; }
@@ -355,6 +367,9 @@ a:link {
     font-size: 0.75rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; }
+
+.form-button:disabled {
+  background-color: #e6e6e6; }
 
 .form-steps {
   flex-direction: column;
@@ -398,12 +413,14 @@ a:link {
   align-items: center;
   min-height: 200px;
   width: 100%;
-  background-color: white; }
+  background-color: white;
+  padding: 20px 0;
+  margin: 20px 0; }
   .favoriteplaces-wrapper .favoriteplaces-cities {
-    margin: 20px 0; }
+    margin: 5px 0; }
     .favoriteplaces-wrapper .favoriteplaces-cities span {
-      font-size: 0.5rem;
-      font-weight: 200;
+      font-size: 0.85rem;
+      font-weight: 600;
       color: #777777;
       margin: 0 20px; }
 
@@ -426,21 +443,39 @@ a:link {
     user-select: none;
     outline: none; }
 
-.favoriteplace-item-wrapper-right {
+.countries {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px; }
+
+.country {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px; }
+
+.favoriteplace-item-wrapper {
   flex: 1;
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   align-content: flex-end;
-  max-width: 140px; }
-  .favoriteplace-item-wrapper-right :nth-child(2) {
+  width: 185px;
+  max-width: 185px;
+  margin: 5px 0;
+  padding: 5px 0; }
+  .favoriteplace-item-wrapper :nth-child(2) {
     color: #bebebe; }
-  .favoriteplace-item-wrapper-right span {
+  .favoriteplace-item-wrapper span {
     font-size: 0.7rem;
     font-weight: 400;
     color: #777777;
-    text-align: end;
     line-height: 15px; }
 
 .favoriteplace-item-head {
@@ -450,17 +485,50 @@ a:link {
   justify-content: center;
   align-items: center; }
   .favoriteplace-item-head p {
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: #000;
     text-align: end;
     margin: 0;
-    line-height: 20px; }
-  .favoriteplace-item-head #favoriteplace-item-icon {
+    line-height: 20px;
+    z-index: 5; }
+  .favoriteplace-item-head #favoriteplace-item-readbook {
     width: 33px;
     height: 33px;
     margin: 5px;
     background: url("/static/images/icons/icons.png") -99px 0; }
+  .favoriteplace-item-head #favoriteplace-item-meetpeople {
+    width: 33px;
+    height: 33px;
+    margin: 5px;
+    background: url("/static/images/icons/icons.png") -33px 0; }
+  .favoriteplace-item-head #favoriteplace-item-entertain {
+    width: 33px;
+    height: 33px;
+    margin: 5px;
+    background: url("/static/images/icons/icons.png") -99px 0; }
+  .favoriteplace-item-head #favoriteplace-item-exercise {
+    width: 33px;
+    height: 33px;
+    margin: 5px;
+    background: url("/static/images/icons/icons.png") -132px 0; }
+  .favoriteplace-item-head #favoriteplace-item-healthyfood {
+    width: 33px;
+    height: 33px;
+    margin: 5px;
+    background: url("/static/images/icons/icons.png") -99px 0; }
+  .favoriteplace-item-head #favoriteplace-item-shopping {
+    width: 33px;
+    height: 33px;
+    margin: 5px;
+    background: url("/static/images/icons/icons.png") -66px 0; }
+
+.favoriteplacesdivider {
+  border-right: 0.3px solid #aaaaaa;
+  height: 160px;
+  margin: 0 10px;
+  position: initial;
+  width: 1px; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
