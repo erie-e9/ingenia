@@ -1,6 +1,9 @@
 import '../../../../public/styles/pages/contact/form/index.scss'
 import FormContent from './form-content'
-
+/** *
+ * Orange band show contact message
+ * Contact form component
+* **/ 
 const ContactForm: React.FunctionComponent = () => {
     return (
         <>
@@ -10,7 +13,7 @@ const ContactForm: React.FunctionComponent = () => {
                     <h2>Contact us</h2>
                     <p>Send us an e-mail and we will get back to you:</p>
                 </div>
-
+                {/* Contact component form to send email to Ingenia. */}
                 <FormContent />                
             </div>
         </>

@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import footerlink from '../../../utils/links'
 
+/** *
+ * Ingenia Social Networks links.
+* **/
+
 const FooterLinks: React.FunctionComponent = () => {
     const [ footerlinks, setfooterlinks ]: any = useState();
     const [ socialnetwork_twitter, setsocialnetwork_twitter ]: any = useState(false)

@@ -1,4 +1,6 @@
-export default {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = {
     "favoriteplaces": [
         {
             "readbook": [
@@ -9,7 +11,7 @@ export default {
                     "ubication": "123 Main St",
                     "country": "USA",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "readbook"
+                    "category": "relax"
                 },
                 {
                     "key": "placereadbook2",
@@ -18,7 +20,7 @@ export default {
                     "ubication": "123 Main St",
                     "country": "Mexico",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "readbook"  
+                    "category": "relax"
                 },
                 {
                     "key": "placereadbook3",
@@ -27,7 +29,7 @@ export default {
                     "ubication": "123 Main St",
                     "country": "USA",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "readbook"  
+                    "category": "relax"
                 },
                 {
                     "key": "placereadbook4",
@@ -36,7 +38,7 @@ export default {
                     "ubication": "123 Main St",
                     "country": "Mexico",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "readbook"  
+                    "category": "relax"
                 },
                 {
                     "key": "placereadbook5",
@@ -45,7 +47,7 @@ export default {
                     "ubication": "123 Main St",
                     "country": "USA",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "readbook"  
+                    "category": "relax"
                 },
                 {
                     "key": "placereadbook6",
@@ -54,70 +56,70 @@ export default {
                     "ubication": "123 Main St",
                     "country": "Mexico",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "readbook"   
+                    "category": "relax"
                 }
             ],
             "meetpeople": [
                 {
                     "key": "placemeetpeople1",
-                    "name": "place to meetpeople 1",
+                    "name": "place bar 1",
                     "link": "https://www.facebook.com",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "meetpeople"
+                    "category": "bar"
                 },
                 {
                     "key": "placemeetpeople2",
-                    "name": "place to meetpeople 2",
+                    "name": "place bar 2",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "meetpeople"
+                    "category": "bar"
                 },
                 {
                     "key": "placemeetpeople3",
-                    "name": "place to meetpeople 3",
+                    "name": "place bar 3",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "meetpeople"
+                    "category": "bar"
                 },
                 {
                     "key": "placemeetpeople4",
-                    "name": "place to meetpeople 4",
+                    "name": "place bar 4",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "meetpeople"
+                    "category": "bar"
                 },
                 {
                     "key": "placemeetpeople5",
-                    "name": "place to meetpeople 5",
+                    "name": "place bar 5",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "meetpeople"
+                    "category": "bar"
                 },
                 {
                     "key": "placemeetpeople6",
-                    "name": "place to meetpeople 6",
+                    "name": "place bar 6",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "meetpeople"
+                    "category": "bar"
                 }
             ],
             "entertain": [
                 {
                     "key": "placeentertain1",
-                    "name": "place to entertain 1",
+                    "name": "place entertain 1",
                     "link": "https://www.facebook.com",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
@@ -127,7 +129,7 @@ export default {
                 },
                 {
                     "key": "placeentertain2",
-                    "name": "place to entertain 2",
+                    "name": "place entertain 2",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
@@ -136,7 +138,7 @@ export default {
                 },
                 {
                     "key": "placeentertain3",
-                    "name": "place to entertain 3",
+                    "name": "place entertain 3",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
@@ -145,7 +147,7 @@ export default {
                 },
                 {
                     "key": "placeentertain4",
-                    "name": "place to entertain 4",
+                    "name": "place entertain 4",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
@@ -154,7 +156,7 @@ export default {
                 },
                 {
                     "key": "placeentertain5",
-                    "name": "place to entertain 5",
+                    "name": "place entertain 5",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
@@ -163,7 +165,7 @@ export default {
                 },
                 {
                     "key": "placeentertain6",
-                    "name": "place to entertain 6",
+                    "name": "place entertain 6",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
@@ -174,64 +176,64 @@ export default {
             "exercise": [
                 {
                     "key": "placeexercise1",
-                    "name": "place to exercise 1",
+                    "name": "place exercise 1",
                     "link": "https://www.facebook.com",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "exercise"
+                    "category": "excercise"
                 },
                 {
                     "key": "placeexercise2",
-                    "name": "place to exercise 2",
+                    "name": "place exercise 2",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "exercise"
+                    "category": "excercise"
                 },
                 {
                     "key": "placeexercise3",
-                    "name": "place to exercise 3",
+                    "name": "place exercise 3",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "exercise"
+                    "category": "excercise"
                 },
                 {
                     "key": "placeexercise4",
-                    "name": "place to exercise 4",
+                    "name": "place exercise 4",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "exercise"
+                    "category": "excercise"
                 },
                 {
                     "key": "placeexercise5",
-                    "name": "place to exercise 5",
+                    "name": "place exercise 5",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "exercise"
+                    "category": "excercise"
                 },
                 {
                     "key": "placeexercise6",
-                    "name": "place to exercise 6",
+                    "name": "place exercise 6",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
                     "info": "amazing burgers, imprompteau jazz trios",
-                    "category": "exercise"
+                    "category": "excercise"
                 }
             ],
             "healthyfood": [
                 {
                     "key": "placehealthyfood1",
-                    "name": "place to healthyfood 1",
+                    "name": "place healthyfood 1",
                     "link": "https://www.facebook.com",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
@@ -241,7 +243,7 @@ export default {
                 },
                 {
                     "key": "placehealthyfood2",
-                    "name": "place to healthyfood 2",
+                    "name": "place healthyfood 2",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
@@ -250,7 +252,7 @@ export default {
                 },
                 {
                     "key": "placehealthyfood3",
-                    "name": "place to healthyfood 3",
+                    "name": "place healthyfood 3",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
@@ -259,7 +261,7 @@ export default {
                 },
                 {
                     "key": "placehealthyfood4",
-                    "name": "place to healthyfood 4",
+                    "name": "place healthyfood 4",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
@@ -268,7 +270,7 @@ export default {
                 },
                 {
                     "key": "placehealthyfood5",
-                    "name": "place to healthyfood 5",
+                    "name": "place healthyfood 5",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
@@ -277,7 +279,7 @@ export default {
                 },
                 {
                     "key": "placehealthyfood6",
-                    "name": "place to healthyfood 6",
+                    "name": "place healthyfood 6",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
@@ -288,7 +290,7 @@ export default {
             "shopping": [
                 {
                     "key": "placeshopping1",
-                    "name": "place to shopping 1",
+                    "name": "place shopping 1",
                     "link": "https://www.facebook.com",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
@@ -298,7 +300,7 @@ export default {
                 },
                 {
                     "key": "placeshopping2",
-                    "name": "place to shopping 2",
+                    "name": "place shopping 2",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
@@ -307,7 +309,7 @@ export default {
                 },
                 {
                     "key": "placeshopping3",
-                    "name": "place to shopping 3",
+                    "name": "place shopping 3",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
@@ -316,7 +318,7 @@ export default {
                 },
                 {
                     "key": "placeshopping4",
-                    "name": "place to shopping 4",
+                    "name": "place shopping 4",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
@@ -325,7 +327,7 @@ export default {
                 },
                 {
                     "key": "placeshopping5",
-                    "name": "place to shopping 5",
+                    "name": "place shopping 5",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "Mexico",
@@ -334,7 +336,7 @@ export default {
                 },
                 {
                     "key": "placeshopping6",
-                    "name": "place to shopping 6",
+                    "name": "place shopping 6",
                     "link": "https://www.facebook.com",
                     "ubication": "123 Main St",
                     "country": "USA",
@@ -343,6 +345,5 @@ export default {
                 }
             ]
         }
-        
     ]
-}
+};

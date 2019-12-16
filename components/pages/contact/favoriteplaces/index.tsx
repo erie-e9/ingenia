@@ -3,6 +3,11 @@ import dynamic from "next/dynamic";
 import '../../../../public/styles/pages/contact/favoriteplaces/index.scss'
 import FavoritePlaces from '../../../../utils/favoriteplaces';
 
+/** *
+Favorite places Component shows simple app to suggest a list of known 
+places by category in both places where Ingenia are. 
+* **/
+
 const DynamicItem: any = dynamic(() => import("./item"),
 {   ssr: false,
 //   loading: () => <ComponentLoader />
@@ -35,7 +40,8 @@ const ContactFavoritePlaces: React.FunctionComponent = () => {
                 {
                     favoriteplaces
                     ?   <>
-                            <div className="countries">
+                            <div className="countries">    
+                            {/* List of places by country is loaded dynamically for an external file (favoriteplaces.js) or an API response.  */}
                                 <div className="country">
                                     <div className="favoriteplaces-cities">
                                         <span>MEXICO CITY:</span>
@@ -45,15 +51,11 @@ const ContactFavoritePlaces: React.FunctionComponent = () => {
                                             favoriteplaces.map((item: any) => {
                                                 if (Array.isArray(item[selectedplace])) {
                                                     return (
-                                                        <>
-                                                        { 
-                                                                item[selectedplace].map((element: any, i: number) => {
-                                                                    if (element.country === 'Mexico' ) {
-                                                                        return <DynamicItem key={i} data={element}/>
-                                                                    }
-                                                                })
+                                                        item[selectedplace].map((element: any, i: number) => {
+                                                            if (element.country === 'Mexico' ) {
+                                                                return <DynamicItem key={i} data={element}/>
                                                             }
-                                                        </>
+                                                        })
                                                     )
                                                 }
                                             })
@@ -70,15 +72,11 @@ const ContactFavoritePlaces: React.FunctionComponent = () => {
                                             favoriteplaces.map((item: any) => {
                                                 if (Array.isArray(item[selectedplace])) {
                                                     return (
-                                                        <>
-                                                        { 
-                                                                item[selectedplace].map((element: any, i: number) => {
-                                                                    if (element.country === 'USA' ) {
-                                                                        return <DynamicItem key={i} data={element}/>
-                                                                    }
-                                                                })
+                                                        item[selectedplace].map((element: any, i: number) => {
+                                                            if (element.country === 'USA' ) {
+                                                                return <DynamicItem key={i} data={element}/>
                                                             }
-                                                        </>
+                                                        })
                                                     )
                                                 }
                                             })

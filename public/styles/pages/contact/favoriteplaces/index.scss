@@ -76,7 +76,8 @@
     justify-content: center;
     align-items: flex-end;
     align-content: flex-end;
-    max-width: 165px;
+    width: 185px;
+    max-width: 185px;
     margin: 5px 0;
     padding: 5px 0;
 
@@ -110,10 +111,45 @@
         z-index: 5;
     }
     
-    #favoriteplace-item-icon {
+    #favoriteplace-item-readbook {
         width: 33px;
         height: 33px;
         margin: 5px;
         background: url('/static/images/icons/icons.png') -99px 0;
+    }
+
+    #favoriteplace-item-meetpeople {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/icons/icons.png') -33px 0;
+    }
+
+    #favoriteplace-item-entertain {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/icons/icons.png') -99px 0;
+    }
+
+    #favoriteplace-item-exercise {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/icons/icons.png') -132px 0;
+    }
+    
+    #favoriteplace-item-healthyfood {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/icons/icons.png') -99px 0;
+    }
+
+    #favoriteplace-item-shopping {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/icons/icons.png') -66px 0;
     }
 }

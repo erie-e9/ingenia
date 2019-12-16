@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import navbarlink from '../../../utils/links'
-// import Ilinks from '../../../interfaces/Ilinks'
 import NavbarItem from './item'
 import '../../../public/styles/commons/navbar/index.scss'
+
+/** * 
+ * Navbar is loaded by a external file (links.js) that contain all posible section to visit into web app, that made easier add or remove links in a dynamically way.
+* ** */
 
 const NavBar: React.FunctionComponent = () => {
     const [ navbarlinks ]: any = useState(navbarlink.navbarlinks);

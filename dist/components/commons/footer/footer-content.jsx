@@ -1,13 +1,10 @@
-/** *
- * Component to show info about countries where Ingenia are.
-* **/
-
-const FooterContent: React.FunctionComponent = () => {
-    return (
-      <>
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const FooterContent = () => {
+    return (<>
         <div className="footer-content-left">
           <p>&copy;2014 Ingenia Group</p>
-          {/* <img src="country" alt="country"/> */}
+          
           <div className="footer-ingenia-locations">
             <div className="footer-ingenia-location">
               <div className="footer-content-country">
@@ -30,10 +27,8 @@ const FooterContent: React.FunctionComponent = () => {
               <p className="footer-content-phone">50 22 09 00</p>
             </div>
           </div>
-          {/* <div className="divisor-vertical" /> */}
+          
         </div>
-      </>
-    );
-  }
-  
-  export default FooterContent
+      </>);
+};
+exports.default = FooterContent;
