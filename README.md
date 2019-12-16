@@ -1,66 +1,54 @@
-# TypeScript Next.js example
+## Deploy
 
-This is a really simple project that show the usage of Next.js with TypeScript.
+This example was deploy using [ZEIT Now](https://zeit.co/now).
 
-## Deploy your own
-
-Deploy the example using [ZEIT Now](https://zeit.co/now):
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/next.js/tree/canary/examples/with-typescript)
+Link [Ingenia Contact](https://ingenia.now.sh/contact)
 
 ## How to use it?
+Execute `git clone [repository]` then inside new folder with intall dependencies using [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [Npm](https://nodejs.org/en/) to bootstrap the example.
 
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-typescript with-typescript-app
-# or
-yarn create next-app --example with-typescript with-typescript-app
+```
+git clone https://github.com/Eric-Andrade/ingenia.git
+cd ingenia
+yarn or npm install
 ```
 
-### Download manually
-
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-typescript
-cd with-typescript
+Run dev app:
 ```
-
-Install it and run:
-
-```bash
-npm install
-npm run dev
-# or
-yarn
 yarn dev
 ```
 
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download)):
-
-```bash
-now
+Run production will use local custom server powered with http2, to run it use in command-line next command:
+```
+yarn runprod
 ```
 
-## The idea behind the example
-
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
+If you want to run distribution app you would use three commands:
 
 ```
-npm install --save-dev typescript
+yarn build
 ```
+```cd out``` and ```yarn serve -p 8080```
 
-To enable TypeScript's features, we install the type declaratons for React and Node.
+##### Note: 
+Port could change for anyone you choice.
 
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
+## About 
+This little project is powered by [Next.js](https://nextjs.org/), [Sass](https://sass-lang.com/), [TypeScript](https://www.typescriptlang.org/), Webpack, [Google reCaptcha](https://www.google.com/recaptcha) and other usefully techs.
+Boilerplate is carefully built to better performance app.
 
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
+#### Good practices
+React + Hooks: Using React last version for better Coder experience.
+Sass: Improve styling app.
+Webp: Faster load images (if browser support it).
+Typescript: Minimize commons bugs coding.
+Code splitting: Improve performance splitting code and use it by demand.
+Google Captcha V2: Denege robots access form.
 
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
+## Important
 
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+#### Next.js
+Next.js by default has some problem with new route added (like this example -contact) for that you could experience some trouble. Solution: just click in your browser the route you want to go, after that you will navigate in new routes and others.
+
+#### [Google Captcha](https://www.google.com/recaptcha) 
+To use Google Captcha is neccesary add domain to Google console, all domains require a host and must not include any path, port, query or fragment. For that is not possible use Captcha in [ZEIT Now](https://zeit.co/now) deploy. If you want to use it in new domain it'll requires register in [Google Captcha](https://www.google.com/recaptcha) domains.

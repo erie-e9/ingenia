@@ -1,10 +1,13 @@
 const withCSS = require('@zeit/next-css')
 const withSass = require('@zeit/next-sass')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const withPurgeCss = require('next-purgecss')
 // const withFonts = require('next-fonts');
+const webpack = require('webpack')
 
 const nextConfig = {
     exportTrailingSlash: true,
+    compress: true,
     exportPathMap: function() {
       return {
         '/': { page: '/' },
@@ -47,8 +50,22 @@ const nextConfig = {
         //   ],
         // });
 
+        // plugins
+        // plugins
+        config.plugins.push(
+          new webpack.optimize.LimitChunkCountPlugin({
+            maxChunks: 5
+          })
+        );
+
+        config.plugins.push(
+        new webpack.optimize.MinChunkSizePlugin({
+            minChunkSize: 10000
+        })
+        );
+        // /plugins
         return config
     }
 }
 
-module.exports = withSass(withCSS(nextConfig))
+module.exports = withSass(withCSS(withPurgeCss(nextConfig)))

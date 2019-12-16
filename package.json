@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build && tsc --project tsconfig.server.json",
     "start": "yarn build && cross-env NODE_ENV=production node dist/index.js",
-    "ewe": "yarn build && nodemon server/index.ts",
+    "runprod": "yarn build && nodemon server/index.ts",
     "startprod": "yarn build && cross-env PORT=8000 npm start",
     "type-check": "tsc",
     "nextexp": "next build && next export"
@@ -32,10 +32,12 @@
     "@zeit/next-sass": "^1.0.1",
     "cross-env": "^6.0.3",
     "mini-css-extract-plugin": "^0.8.0",
+    "next-purgecss": "^3.1.2",
     "node-sass": "^4.13.0",
     "raw-loader": "^4.0.0",
     "sass-loader": "^8.0.0",
-    "typescript": "3.6.3"
+    "typescript": "3.6.3",
+    "webpack": "^4.41.3"
   },
   "license": "ISC"
 }
