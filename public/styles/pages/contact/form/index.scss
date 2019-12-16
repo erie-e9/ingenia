@@ -108,6 +108,10 @@ $tellus-wrapper-height: 170px;
     }
 }
 
+.form-button:disabled {
+    background-color: $THIRD;
+}
+
 .form-steps {
     flex-direction: column;
     display: flex;

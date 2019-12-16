@@ -19,6 +19,7 @@ const FooterContent: React.FunctionComponent = () => {
               <p className="footer-content-address">Washington DC 20036 USA</p>
               <p className="footer-content-phone">50 22 09 00</p>
             </div>
+            <div className="footerDivider"></div>
             <div className="footer-ingenia-location">
               <div className="footer-content-country">
                 <div className="countryimage" id="mexico"></div>

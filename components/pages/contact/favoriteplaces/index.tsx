@@ -62,7 +62,7 @@ const ContactFavoritePlaces: React.FunctionComponent = () => {
                                         }
                                     </div>
                                 </div>
-                            
+                                <div className="favoriteplacesdivider"></div>
                                 <div className="country">
                                     <div className="favoriteplaces-cities">
                                         <span>WASHINGTON DC:</span>

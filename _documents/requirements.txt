@@ -1,8 +1,8 @@
-* Hacer contact.jpg usando React.js
-*Usar fuentes de assets/fonts
-*Funcionar de
+	* Hacer contact.jpg usando React.js
+	*Usar fuentes de assets/fonts
+	*Funcionar de
    manera modular
-*Validación de campos
+	*Validación de campos
 * service:
 	objeto tipo FormData
 	url: http://ingenia.com/snippets/test/contact.php
@@ -15,7 +15,7 @@
    comment
 
 	mostrar mensaje en pantalla al usuario (No usar alert)
-*Next.js
+	*Next.js
 *CAPTCHA al formulario
 La prueba deberá contemplar la siguiente estructura:
 

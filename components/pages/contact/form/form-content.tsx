@@ -16,7 +16,7 @@ const FormContent: React.FunctionComponent = () => {
             comment: data.comment.trim(),
         }
 
-        console.log('dataform', dataobj);
+        console.log('form-data', dataobj);
 
     // HTTP request POST type to send email usign axios like middleman, 
     // with observables to catch responses
@@ -30,12 +30,17 @@ const FormContent: React.FunctionComponent = () => {
         //   });
 
         axios({
-            method: 'post',
-            url: 'http://ingenia.com/snippets/test/contact.php',
-            data: dataobj
+            method: 'POST',
+            url: 'https://ingenia.com/snippets/test/contact.php',
+            data: dataobj,
+            headers: {
+                'Content-Type': 'multipart/form-data',
+                // 'Content-Type': 'application/json;charset=UTF-8',
+                // 'Access-Control-Allow-Origin': '*',
+            }
           })
           .then(function (response) {
-            console.log(response);
+            console.log('exito we: ', response);
           })
           .catch(function (error) {
             console.log(error);
@@ -142,7 +147,7 @@ const FormContent: React.FunctionComponent = () => {
                             </div>
                             <div className="tellus-button-wrapper">
                                 <button className="form-button" onClick={resetRecaptcha}><span>RESET reCAPTCHA</span></button>
-                                <button className="form-button" type="submit" onClick={() => handleClick()}><span>SEND</span></button>
+                                <button className="form-button" type="submit" onClick={() => handleClick()} disabled={!isVerified}><span>SEND</span></button>
                             </div>
                         </div>
                     </div>
