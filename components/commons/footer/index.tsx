@@ -1,4 +1,5 @@
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic'
+import '../../../public/styles/commons/footer/index.scss'
 
 const DynamicFooterComponent: any = dynamic(() => import("./footer-content"),
 { ssr: false,
@@ -14,10 +15,13 @@ const Footer: React.FunctionComponent = () => {
     return (
       <>
         <footer>
-            {/* <DynamicFooterComponent /> */}
-            <p>@Ingenia 2014</p>
-            <DynamicFooterComponent/>
-            <DynamicFooterLinks/>
+            <div className="footer-wrapper">
+              {/* <DynamicFooterComponent /> */}
+              <div className="footer-head-wrapper">
+                <DynamicFooterComponent/>
+                <DynamicFooterLinks/>
+              </div>
+            </div>
         </footer>
       </>
     );

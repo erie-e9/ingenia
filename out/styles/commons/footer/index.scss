@@ -1,0 +1,197 @@
+@import '../../variables.scss';
+
+.footer-wrapper {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    width: 100%;
+    background-color: $THIRD;
+}
+
+.footer-head-wrapper {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 70%;
+    padding: 25px 0;
+}
+
+.footer-content-left {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+        p {
+            margin: 0;
+            line-height: 20px;
+        }
+}
+
+.footer-content-right {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    min-height: 180px;
+}
+
+.footer-ingenia-locations {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    .footer-ingenia-location {
+        flex: 1;
+        flex-direction: column;
+        display: flex;
+        margin: 20px 5px;
+        padding: 0 15px 0 0;
+        width: 175px;
+
+        p {
+            color: #777777;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+    }
+}
+ 
+span.footerlink {
+    margin: 0 10px;
+    font-size: 1rem;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+        color: $PRIMARY
+    }
+}
+
+.footer-content-sublinks {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footersublink {
+    margin: 5px 5px;
+    font-size: 0.85rem;
+    color: #777777;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.footer-content-country {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    p.countryname {
+        margin: 5px 5px;
+        font-size: 0.9rem;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        line-height: 30px;
+        // padding: 5px 0;
+
+    }
+    #usa {
+        width: 27px;
+        height: 15px;
+        background: url('/static/images/icons/countrys.png') 0 0;
+    }
+    
+    #mexico {
+        width: 23px;
+        height: 15px;
+        background: url('/static/images/icons/countrys.png') -40px 0;
+    }
+}
+
+.socialnetworks-wrapper {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    div {
+        cursor: pointer;
+    }
+
+    #socialnetwork-twitter {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/btns/btns.png') -33px 0;
+    }
+
+    #socialnetwork-twitter-hover {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/btns/btns.png') -33px -33px;
+    }
+
+    #socialnetwork-facebook {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/btns/btns.png') -66px 0;
+    }
+
+    #socialnetwork-facebook-hover {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/btns/btns.png') -66px -33px;
+    }
+
+    #socialnetwork-youtube {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/btns/btns.png') -99px 0;
+    }
+
+    #socialnetwork-youtube-hover {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/btns/btns.png') -99px -33px;
+    }
+
+    #socialnetwork-linkedln {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/btns/btns.png') 0 0;
+    }
+
+    #socialnetwork-linkedln-hover {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/btns/btns.png') 0 -33px;
+    }
+
+}

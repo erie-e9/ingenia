@@ -1,0 +1,13 @@
+input[type=text].forms-input-text {
+    // 
+    padding: 10px 9px;
+    border-radius: 1px;
+    box-sizing: border-box;
+    border: 0.5px solid #777777;
+    outline: none;
+
+    &:focus {
+        // border: 1px solid red;
+        // background-color: rgb(247, 247, 247);
+    }
+}

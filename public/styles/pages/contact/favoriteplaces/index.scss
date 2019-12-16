@@ -1,0 +1,119 @@
+@import '../../../variables.scss';
+
+.favoriteplaces-wrapper {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    width: 100%;
+    background-color: $SECOND;
+    padding: 20px 0;
+    margin: 20px 0;
+
+    .favoriteplaces-cities {
+        margin: 5px 0;
+        
+        span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #777777;
+            margin: 0 20px;
+        }
+    }
+}
+
+.favoriteplaces-head {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .favoriteplaces-selector {
+        margin: 0 5px;
+        position: relative;
+        font-family: Arial;
+    }
+
+    .favoriteplaces-selector select {
+        // display: none; /*hide original SELECT element:*/
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid transparent;
+        // border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        border-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        user-select: none;
+        outline: none;
+    }
+
+}
+
+.countries {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.country {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.favoriteplace-item-wrapper{
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    max-width: 165px;
+    margin: 5px 0;
+    padding: 5px 0;
+
+    :nth-child(2) {
+        color: #bebebe;
+    }
+
+    span {
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #777777;
+        // text-align: end;
+        line-height: 15px;
+    }
+}
+
+.favoriteplace-item-head {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #000;
+        text-align: end;
+        margin: 0;
+        line-height: 20px;
+        z-index: 5;
+    }
+    
+    #favoriteplace-item-icon {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/icons/icons.png') -99px 0;
+    }
+}

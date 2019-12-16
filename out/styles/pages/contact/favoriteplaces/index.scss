@@ -1,0 +1,96 @@
+@import '../../../variables.scss';
+
+.favoriteplaces-wrapper {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    width: 100%;
+    background-color: $SECOND;
+
+    .favoriteplaces-cities {
+        margin: 20px 0;
+        
+        span {
+            font-size: 0.5rem;
+            font-weight: 200;
+            color: #777777;
+            margin: 0 20px;
+        }
+    }
+}
+
+.favoriteplaces-head {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .favoriteplaces-selector {
+        margin: 0 5px;
+        position: relative;
+        font-family: Arial;
+    }
+
+    .favoriteplaces-selector select {
+        // display: none; /*hide original SELECT element:*/
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid transparent;
+        // border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        border-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        user-select: none;
+        outline: none;
+    }
+
+}
+
+.favoriteplace-item-wrapper-right {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    max-width: 140px;
+
+    :nth-child(2) {
+        color: #bebebe;
+    }
+
+    span {
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #777777;
+        text-align: end;
+        line-height: 15px;
+    }
+}
+
+.favoriteplace-item-head {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #000;
+        text-align: end;
+        margin: 0;
+        line-height: 20px;
+    }
+    
+    #favoriteplace-item-icon {
+        width: 33px;
+        height: 33px;
+        margin: 5px;
+        background: url('/static/images/icons/icons.png') -99px 0;
+    }
+}
